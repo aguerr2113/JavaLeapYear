@@ -20,8 +20,16 @@ public class App {
                 // use the instance to store the user input as the year using the year variable
                 year = sc.nextInt();
 
+                // set bool to true so the loop ends.
                 validInput = true;
                 
+                // check the year if it is a leap year
+                // tell user if it is or isnt a leap year
+                if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+                    System.out.println("The year " + year + " is a leap year.");
+                } else {
+                    System.out.println("The year " + year + " is not a leap year.");
+                }
             }
         }
         
