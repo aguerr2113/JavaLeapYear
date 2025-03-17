@@ -30,33 +30,12 @@ public class App {
                 } else {
                     System.out.println("The year " + year + " is not a leap year.");
                 }
+            } else{
+                System.out.println("Invalid input Please enter a valid year. Or I wont stop...");
+
+                sc.next();
             }
         }
-        
-
-
-
-        
-        
-        // check the year if it is a leap year
-        // tell user if it is or isnt a leap year
-        if (year % 4 == 0) {
-            // if the year is divisible by 4 then
-            System.out.println("The year " + year + " is a leap year.");
-        } else if (year % 400 == 0) {
-            // if the year is divivible by 400 then
-            System.out.println("The year " + year + " is a leap year.");
-        } else if (year % 100 == 0) {
-            // if the year is divivible by 100 then
-            System.out.println("The year " + year + " is not a leap year.");
-        }
-        else {
-            // 
-            System.out.println("The year " + year + " is not a leap year.");
-        }
-        
-        // tell user if it is nonsense
-        
         sc.close();
     }
 }
